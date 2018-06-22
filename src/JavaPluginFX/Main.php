@@ -3,7 +3,7 @@
 namespace JavaPluginFX;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\utils\TextFormat as Color;
+use pocketmine\utils\TextFormat as TF;
 use pocketmine\Player;
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
@@ -11,7 +11,7 @@ use pocketmine\command\Command;
 class Main extends PluginBase{
 	
 	public function onEnable() {
-		$this->getServer()->getLogger()->info(Color::GRAY . "[" . Color::GREEN . "Gamemode" . Color::GRAY . "]" . Color::RED . "aktiviert");
+		$this->getServer()->getLogger()->info(TF::GRAY . "[" . TF::GREEN . "Gamemode" . TF::GRAY . "]" . TF::RED . "aktiviert");
 
     }
     
@@ -19,17 +19,17 @@ class Main extends PluginBase{
 			
 			switch($cmd->getName() ) {
 				case "gms";
-$sender->sendMessage (Color::GRAY . "[" . Color::GREEN . "Gamemode" . Color::GRAY . "]"  . Color::GREEN . " Dein Spielmodus wurde zu" . Color::RED . " Survival §ageändert");
+$sender->sendMessage (TF::GRAY . "[" . TF::GREEN . "Gamemode" . TF::GRAY . "]"  . TF::GREEN . " Dein Spielmodus wurde zu" . TF::RED . " Survival" . TF::GREEN . " geändert");
 $sender->setGamemode (0);
 				return true;
 				
 				case  "gmc";
- $sender->sendMessage (Color::GRAY . "[" . Color::GREEN . "Gamemode" . Color::GRAY . "]" . Color::GREEN . " Dein Spielmodus wurde zu" . Color::RED . " Kreative §ageändert");
+ $sender->sendMessage (TF::GRAY . "[" . TF::GREEN . "Gamemode" . TF::GRAY . "]" . TF::GREEN . " Dein Spielmodus wurde zu" . TF::RED . " Kreative" . TF::GREEN . " geändert");
  $sender->setGamemode (1);
 		        return true;
 				
 				case  "gmt";
-$sender->sendMessage (Color::GRAY . "[" . Color::GREEN . "Gamemode" . Color::GRAY . "]" . Color::GREEN . " Dein Spielmodus wurde zu" . Color::RED . " Spectator §ageändert");
+$sender->sendMessage (TF::GRAY . "[" . TF::GREEN . "Gamemode" . TF::GRAY . "]" . TF::GREEN . " Dein Spielmodus wurde zu" . TF::RED . " Spectator" . TF::GREEN . " geändert");
 $sender->setGamemode (3);
 				return true;
 				
