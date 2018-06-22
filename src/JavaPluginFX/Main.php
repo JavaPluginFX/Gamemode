@@ -11,8 +11,6 @@ use pocketmine\command\Command;
 class Main extends PluginBase{
 	
 	public function onEnable() {
-		
-		$this->getServer()->getPluginManager ()->registerEvents ($this, $this);
 		$this->getServer()->getLogger()->info(Color::GRAY . "[" . Color::GREEN . "Gamemode" . Color::GRAY . "]" . Color::RED . "aktiviert");
 
     }
