@@ -1,0 +1,14 @@
+name: Gamemode
+version: 1.0.0
+main: JavaPluginFX\Main
+api: 3.0.0-ALPHA12
+commands:
+  gms:
+     description: Gamemode 0 Command
+     usage: /gms
+  gmc:
+     description: Gamemode 1 Commamd
+     usage: /gmc
+  gmt:
+     description: Gamemode 3 Command
+     usage: /gmt
