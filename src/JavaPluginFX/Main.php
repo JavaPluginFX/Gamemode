@@ -19,17 +19,17 @@ class Main extends PluginBase{
 			
 			switch($cmd->getName() ) {
 				case "gms";
-$sender->sendMessage (TF::GRAY . "[" . TF::GREEN . "Gamemode" . TF::GRAY . "]"  . TF::GREEN . " Dein Spielmodus wurde zu" . TF::RED . " Survival" . TF::GREEN . " geändert");
+$sender->sendMessage (TF::GRAY . "[" . TF::GREEN . "Gamemode" . TF::GRAY . "]"  . TF::GREEN . " Dein Spielmodus wurde zu Survival geändert");
 $sender->setGamemode (0);
 				return true;
 				
 				case  "gmc";
- $sender->sendMessage (TF::GRAY . "[" . TF::GREEN . "Gamemode" . TF::GRAY . "]" . TF::GREEN . " Dein Spielmodus wurde zu" . TF::RED . " Kreative" . TF::GREEN . " geändert");
+ $sender->sendMessage (TF::GRAY . "[" . TF::GREEN . "Gamemode" . TF::GRAY . "]" . TF::GREEN . " Dein Spielmodus wurde zu Kreative geändert");
  $sender->setGamemode (1);
 		        return true;
 				
 				case  "gmt";
-$sender->sendMessage (TF::GRAY . "[" . TF::GREEN . "Gamemode" . TF::GRAY . "]" . TF::GREEN . " Dein Spielmodus wurde zu" . TF::RED . " Spectator" . TF::GREEN . " geändert");
+$sender->sendMessage (TF::GRAY . "[" . TF::GREEN . "Gamemode" . TF::GRAY . "]" . TF::GREEN . " Dein Spielmodus wurde zu Spectator geändert");
 $sender->setGamemode (3);
 				return true;
 				
