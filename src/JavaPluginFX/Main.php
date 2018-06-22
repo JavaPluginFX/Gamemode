@@ -19,17 +19,17 @@ class Main extends PluginBase{
 			
 			switch($cmd->getName() ) {
 				case "gms";
-$sender->sendMessage (Color::GRAY . "[" . Color::GREEN . "Gamemode" . Color::GRAY . "]"  . Color::GREEN . " Dein Spielmodus wurde zu" . Color::RED . " Survival" . Color::GREEN . " geändert");
+$sender->sendMessage (Color::GRAY . "[" . Color::GREEN . "Gamemode" . Color::GRAY . "]"  . Color::GREEN . " Dein Spielmodus wurde zu" . Color::RED . " Survival §ageändert");
 $sender->setGamemode (0);
 				return true;
 				
 				case  "gmc";
- $sender->sendMessage (Color::GRAY . "[" . Color::GREEN . "Gamemode" . Color::GRAY . "]" . Color::GREEN . " Dein Spielmodus wurde zu" . Color::RED . " Kreative" . Color::GREEN . " geändert");
+ $sender->sendMessage (Color::GRAY . "[" . Color::GREEN . "Gamemode" . Color::GRAY . "]" . Color::GREEN . " Dein Spielmodus wurde zu" . Color::RED . " Kreative §ageändert");
  $sender->setGamemode (1);
 		        return true;
 				
 				case  "gmt";
-$sender->sendMessage (Color::GRAY . "[" . Color::GREEN . "Gamemode" . Color::GRAY . "]" . Color::GREEN . " Dein Spielmodus wurde zu" . Color::RED . " Spectator" . Color::GREEN . " geändert");
+$sender->sendMessage (Color::GRAY . "[" . Color::GREEN . "Gamemode" . Color::GRAY . "]" . Color::GREEN . " Dein Spielmodus wurde zu" . Color::RED . " Spectator §ageändert");
 $sender->setGamemode (3);
 				return true;
 				
